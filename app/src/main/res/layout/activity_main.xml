@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.anahitavakoli.myapplication.customView.FarsiTextView
+                android:id="@+id/txt_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/special"
+                android:textColor="@color/white"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_special" />
+
+            <com.anahitavakoli.myapplication.customView.FarsiTextView
+                android:id="@+id/txt_new_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/new_video"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_banner" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_new_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_new_video" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_new_video" />
+
+
+            <com.anahitavakoli.myapplication.customView.FarsiTextView
+                android:id="@+id/txt_latest_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/latest_video"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_category" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_latest_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_latest_video" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt_all_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/all_video"
+                android:textColor="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_latest_video" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_all_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/txt_all_video" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

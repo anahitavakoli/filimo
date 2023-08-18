@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Filimo</string>
+    <string name="special">ویژه های فیلیمو</string>
+    <string name="new_video">تازه های فیلیمو</string>
+    <string name="latest_video">آخرین های فیلیمو</string>
+    <string name="all_video">همه ویدیوها</string>
+</resources>
