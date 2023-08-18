@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication.adapter
+package com.anahitavakoli.apps.filimo.adapter
 
 import android.content.Context
 import android.content.Intent
@@ -9,9 +9,9 @@ import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.anahitavakoli.myapplication.R
-import com.anahitavakoli.myapplication.activities.VideoActivity
-import com.anahitavakoli.myapplication.model.Video
+import com.anahitavakoli.apps.filimo.R
+import com.anahitavakoli.apps.filimo.activities.VideoActivity
+import com.anahitavakoli.apps.filimo.model.Video
 import com.squareup.picasso.Picasso
 
 class VideoAdapter(mcontext: Context, data: List<Video>) : RecyclerView.Adapter<VideoAdapter.VideoVH>() {

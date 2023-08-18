@@ -1,6 +1,6 @@
-package com.anahitavakoli.myapplication.api
+package com.anahitavakoli.apps.filimo.api
 
-import com.anahitavakoli.myapplication.model.HomeVideoModel
+import com.anahitavakoli.apps.filimo.model.HomeVideoModel
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET

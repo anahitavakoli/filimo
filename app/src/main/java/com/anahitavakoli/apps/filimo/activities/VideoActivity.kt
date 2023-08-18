@@ -1,12 +1,12 @@
-package com.anahitavakoli.myapplication.activities
+package com.anahitavakoli.apps.filimo.activities
 
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
 import androidx.appcompat.app.AppCompatActivity
-import com.anahitavakoli.myapplication.databinding.ActivityVideoBinding
-import com.anahitavakoli.myapplication.model.Video
+import com.anahitavakoli.apps.filimo.databinding.ActivityVideoBinding
+import com.anahitavakoli.apps.filimo.model.Video
 import com.google.android.exoplayer2.ExoPlayer
 import com.google.android.exoplayer2.MediaItem
 
@@ -30,7 +30,7 @@ class VideoActivity : AppCompatActivity() {
         bundle = intent.extras!!
 
         video = if (Build.VERSION.SDK_INT >= 33) {
-            intent.getParcelableExtra("videoObj",Video::class.java)
+            intent.getParcelableExtra("videoObj", Video::class.java)
         } else{
             intent.getParcelableExtra<Video>("videoObj")
         }

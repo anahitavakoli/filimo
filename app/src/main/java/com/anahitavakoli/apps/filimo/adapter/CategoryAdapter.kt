@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication.adapter
+package com.anahitavakoli.apps.filimo.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.anahitavakoli.myapplication.R
-import com.anahitavakoli.myapplication.model.Category
+import com.anahitavakoli.apps.filimo.R
+import com.anahitavakoli.apps.filimo.model.Category
 import com.squareup.picasso.Picasso
 
 class CategoryAdapter(cContext: Context,data:List<Category>): RecyclerView.Adapter<CategoryAdapter.CategoryVH>() {

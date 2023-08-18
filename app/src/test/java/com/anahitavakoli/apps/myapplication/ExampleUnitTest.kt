@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication
+package com.anahitavakoli.apps.myapplication
 
 import org.junit.Test
 

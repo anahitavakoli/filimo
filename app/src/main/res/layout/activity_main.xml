@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_gray"
-    tools:context=".MainActivity">
+    tools:context="com.anahitavakoli.apps.filimo.MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <com.anahitavakoli.myapplication.customView.FarsiTextView
+            <com.anahitavakoli.apps.filimo.customView.FarsiTextView
                 android:id="@+id/txt_special"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@+id/txt_special" />
 
-            <com.anahitavakoli.myapplication.customView.FarsiTextView
+            <com.anahitavakoli.apps.filimo.customView.FarsiTextView
                 android:id="@+id/txt_new_video"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/recycler_new_video" />
 
 
-            <com.anahitavakoli.myapplication.customView.FarsiTextView
+            <com.anahitavakoli.apps.filimo.customView.FarsiTextView
                 android:id="@+id/txt_latest_video"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

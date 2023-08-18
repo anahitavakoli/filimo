@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication.model
+package com.anahitavakoli.apps.filimo.model
 
 import com.google.gson.annotations.SerializedName
 

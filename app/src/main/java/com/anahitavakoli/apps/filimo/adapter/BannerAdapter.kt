@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication.adapter
+package com.anahitavakoli.apps.filimo.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.recyclerview.widget.RecyclerView
-import com.anahitavakoli.myapplication.R
-import com.anahitavakoli.myapplication.model.Banner
+import com.anahitavakoli.apps.filimo.R
+import com.anahitavakoli.apps.filimo.model.Banner
 import com.squareup.picasso.Picasso
 
 
@@ -29,7 +29,7 @@ class BannerAdapter(context : Context, data : List<Banner>) : RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: BannerVH, position: Int) {
-        val banner:Banner = listBanner.get(position)
+        val banner: Banner = listBanner.get(position)
         Picasso.get().load(banner.bannerImage).into(holder.imgBanner)
 
     }

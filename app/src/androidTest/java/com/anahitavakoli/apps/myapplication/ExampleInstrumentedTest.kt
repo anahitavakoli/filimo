@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication
+package com.anahitavakoli.apps.myapplication
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

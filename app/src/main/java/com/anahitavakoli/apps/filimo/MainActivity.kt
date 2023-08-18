@@ -1,18 +1,18 @@
-package com.anahitavakoli.myapplication
+package com.anahitavakoli.apps.filimo
 
 import android.graphics.Typeface
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.anahitavakoli.myapplication.adapter.BannerAdapter
-import com.anahitavakoli.myapplication.adapter.CategoryAdapter
-import com.anahitavakoli.myapplication.adapter.VideoAdapter
-import com.anahitavakoli.myapplication.api.IService
-import com.anahitavakoli.myapplication.api.RetrofitClient
-import com.anahitavakoli.myapplication.databinding.ActivityMainBinding
-import com.anahitavakoli.myapplication.model.Banner
-import com.anahitavakoli.myapplication.model.HomeVideoModel
+import com.anahitavakoli.apps.filimo.adapter.BannerAdapter
+import com.anahitavakoli.apps.filimo.adapter.CategoryAdapter
+import com.anahitavakoli.apps.filimo.adapter.VideoAdapter
+import com.anahitavakoli.apps.filimo.api.IService
+import com.anahitavakoli.apps.filimo.api.RetrofitClient
+import com.anahitavakoli.apps.filimo.databinding.ActivityMainBinding
+import com.anahitavakoli.apps.filimo.model.Banner
+import com.anahitavakoli.apps.filimo.model.HomeVideoModel
 import okhttp3.ResponseBody
 import org.json.JSONArray
 import org.json.JSONObject

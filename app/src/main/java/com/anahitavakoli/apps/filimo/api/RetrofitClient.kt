@@ -1,4 +1,4 @@
-package com.anahitavakoli.myapplication.api
+package com.anahitavakoli.apps.filimo.api
 
 import com.google.gson.Gson
 import retrofit2.Retrofit
