@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/black"/>
+        android:background="@color/white"/>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
@@ -29,13 +29,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ListView
+                android:id="@+id/search_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"/>
+
             <com.anahitavakoli.apps.filimo.customView.FarsiTextView
                 android:id="@+id/txt_special"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/special"
                 android:textColor="@color/white"
-                tools:ignore="MissingConstraints" />
+                app:layout_constraintTop_toBottomOf="@id/search_list" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_banner"

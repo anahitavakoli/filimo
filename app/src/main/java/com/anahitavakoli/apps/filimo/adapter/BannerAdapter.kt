@@ -11,9 +11,9 @@ import com.anahitavakoli.apps.filimo.model.Banner
 import com.squareup.picasso.Picasso
 
 
-class BannerAdapter(context : Context, data : List<Banner>) : RecyclerView.Adapter<BannerAdapter.BannerVH>() {
+class BannerAdapter(mContext : Context, data : List<Banner>) : RecyclerView.Adapter<BannerAdapter.BannerVH>() {
 
-    var context = context
+    var context = mContext
     var listBanner = data
     var inflater :LayoutInflater = LayoutInflater.from(context)
 
